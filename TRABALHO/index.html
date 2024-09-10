@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Boxe - Treine Forte</title>
+    <link rel="stylesheet" href="styli.css">
+</head>
+<body>
+    <header>
+        <h1>BOXING WORLD</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#treinamento">Treinamento</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="section intro">
+        <h2>Seja Bem-vindo ao Mundo do Boxe</h2>
+        <p>Aprenda técnicas e treine como um campeão.</p>
+        <img src="https://images.alphacoders.com/135/thumb-1920-1358566.png" alt="Imagem de Introdução">
+    </section>
+
+    <section id="sobre" class="section sobre">
+        <h2>Sobre o Boxe</h2>
+        <p>O boxe é uma arte marcial e esporte de combate no qual os lutadores utilizam os punhos para atacar e defender.</p>
+    </section>
+
+    <section id="treinamento" class="section treinamento">
+        <h2>Nosso Treinamento</h2>
+        <p>Oferecemos treinos de alta intensidade para melhorar a resistência, técnica e força.</p>
+        <div class="treino-boxe">
+            <div class="treino">
+                <h3>Técnicas Básicas</h3>
+                <p>Aperfeiçoe seus jabs, cruzados e ganchos com nossos treinadores especializados.</p>
+            </div>
+            <div class="treino">
+                <h3>Treino de Força</h3>
+                <p>Construa força e potência com exercícios funcionais e circuitos intensos.</p>
+            </div>
+            <div class="treino">
+                <h3>Resistência</h3>
+                <p>Melhore seu condicionamento físico com treinos aeróbicos e anaeróbicos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section contato">
+        <h2>Entre em Contato</h2>
+        <p>Envie uma mensagem e agende seu treino experimental.</p>
+        <button class="btn-contato">Fale Conosco</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Treinamento de Boxe. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+    
+        window.addEventListener('scroll', function() {
+            let sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                let sectionPos = section.getBoundingClientRect().top;
+                let screenPos = window.innerHeight / 1.3;
+                if (sectionPos < screenPos) {
+                    section.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
